@@ -84,6 +84,7 @@ main > section{
     align-items: center;
     text-align: center;
     margin: auto;
+    margin-top: 200px;
 }
 .teams{
     justify-content: center;
@@ -115,6 +116,16 @@ main > section{
     font-weight: 600;
     margin-top: 10px;
 }
+#badge{
+    align-items: center;
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -85px;
+    margin-top: -80px;
+    
+}
+
 .facts-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -130,10 +141,45 @@ main > section{
 #quick-list{
     font-weight: 500;
 }
+#year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding: 20px;
+
+}
 .sponsor-info{
     max-width: 540px;
     margin: 20px auto;
     text-align: center;
+}
+.feature-card-container{
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 50pxpx;
+    border-radius: 8px;
+
+}
+.feature-card-container, .feature-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+   
+
+}
+.features-section{
+  
+    width: 1440px;
+    height: 1059px;
+    justify-items: center;
+    align-items: center;
+    gap: 100px;
+    margin: auto;
+    margin-top: 200px;
+}
+.feature-ar{
+    max-width: 100%;
 }
 .sponsor-companies{
     display: grid;
@@ -144,9 +190,23 @@ main > section{
 .sponsor-companies img{
     filter: grayscale(100%);
 }
+.last{
+    background-color:rgba(255, 244, 231, 1);
+    color: black;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 1440px;
+    margin: auto;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+   
+}
 @media screen and (max-width:576px) {
     .navbar,
      .nav-links,
+     .features-section
      .teams{
         flex-direction: column;
     }
@@ -164,6 +224,13 @@ main > section{
         gap: 24px;
        }
        .our-features{
+        margin-left: 20px;
+       }
+       .feature-ar{
+
+       }
+       #badge{
+        margin-top: 20px;
         margin-left: 20px;
        }
     
